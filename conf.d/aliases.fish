@@ -6,6 +6,8 @@ alias ll="exa -lF --git --group-directories-first -g"
 alias la="l -a"
 alias lla="ll -a"
 
+alias r="ranger"
+
 alias e="emacs -nw"
 alias ee="emacs"
 alias ec="emacsclient"
