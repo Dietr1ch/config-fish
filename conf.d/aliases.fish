@@ -8,10 +8,10 @@ alias lla="ll -a"
 
 alias r="ranger"
 
-alias e="emacs -nw"
-alias ee="emacs"
+alias e="$EDITOR"
+alias ee="$VISUAL"
+alias em="emacs"
 alias ec="emacsclient"
-alias ek="emacsclient --eval'(kill-emacs)'"
 
 alias v="vim"
 alias n="nvim"
