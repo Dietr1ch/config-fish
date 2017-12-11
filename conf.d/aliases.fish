@@ -1,8 +1,13 @@
 
 alias _r="exec fish"
 
-alias l="exa -F --group-directories-first"
-alias ll="exa -lF --git --group-directories-first -g"
+if which exa >/dev/null ^/dev/null
+	alias l="exa -F --group-directories-first"
+	alias ll="exa -lF --git --group-directories-first"
+else
+	alias l="ls --group-directories-first"
+	alias ll="ls -l --group-directories-first"
+end
 alias la="l -a"
 alias lla="ll -a"
 
