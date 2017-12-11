@@ -1,5 +1,10 @@
 
 alias _r="exec fish"
+if which pacaur >/dev/null ^/dev/null
+  alias p="pacaur"
+else if which pacman >/dev/null ^/dev/null
+  alias p="pacman"
+end
 
 if which exa >/dev/null ^/dev/null
 	alias l="exa -F --group-directories-first"
