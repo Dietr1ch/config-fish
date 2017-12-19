@@ -1,6 +1,6 @@
 
 # Theme setup
-set -g theme_newline_cursor yes
+set -g theme_newline_cursor clean
 set -g theme_newline_cursor_arrow_glyph no
 set -g theme_git_worktree_support yes
 set -g theme_display_hg yes
