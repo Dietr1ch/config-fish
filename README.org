@@ -1,7 +1,6 @@
 * config-fish
 
 [[https://travis-ci.org/Dietr1ch/config-fish][https://img.shields.io/travis/Dietr1ch/config-fish.svg]]
-[[https://fisherman-wharf.herokuapp.com][https://fisherman-wharf.herokuapp.com/badge.svg]]
 
 My fish config
 
