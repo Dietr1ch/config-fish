@@ -16,6 +16,7 @@ end
 alias la="l -a"
 alias lla="ll -a"
 
+alias f="fd"
 alias r="ranger"
 
 alias e="$EDITOR"
