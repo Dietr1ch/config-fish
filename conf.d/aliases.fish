@@ -18,6 +18,7 @@ alias lla="ll -a"
 
 alias f="fd"
 alias r="ranger"
+alias rs="rsync"
 
 alias e="$EDITOR"
 alias ee="$VISUAL"
@@ -30,7 +31,6 @@ alias n="nvim"
 alias m="ncmpcpp"
 
 alias g="git"
-alias h="hg"
 
 alias o="xdg-open"
 
