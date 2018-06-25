@@ -32,5 +32,6 @@ set PATH /bin
 add_to_path /usr/{local/,}bin
 add_to_path /usr/bin/{site,vendor,core}_perl
 
-add_to_path $HOME/.bin
+add_to_path $HOME/.local/bin
 add_to_path $HOME/.cargo/bin
+add_to_path $HOME/.bin
