@@ -1,4 +1,24 @@
 
+# Path
+# ====
+function add_to_path
+	for d in $argv
+		if test -d $d
+			set PATH $d $PATH
+		end
+	end
+end
+
+set PATH /bin
+add_to_path /usr/{local/,}bin
+add_to_path /usr/bin/{site,vendor,core}_perl
+
+add_to_path $HOME/.local/bin
+add_to_path $HOME/.cargo/bin
+add_to_path $HOME/.bin
+
+# Editor
+# ======
 if which remacs >/dev/null ^/dev/null
 	set -x EDITOR "remacsclient -c -nw"
 	set -x VISUAL "remacsclient -c"
@@ -19,19 +39,8 @@ else if which vim >/dev/null ^/dev/null
 	set -x ALTERNATE_EDITOR "vim"
 end
 
+# Pager
+# =====
+set -x PAGER less
+set -x LESS "-iMSx4 -F"
 
-function add_to_path
-	for d in $argv
-		if test -d $d
-			set PATH $d $PATH
-		end
-	end
-end
-
-set PATH /bin
-add_to_path /usr/{local/,}bin
-add_to_path /usr/bin/{site,vendor,core}_perl
-
-add_to_path $HOME/.local/bin
-add_to_path $HOME/.cargo/bin
-add_to_path $HOME/.bin
