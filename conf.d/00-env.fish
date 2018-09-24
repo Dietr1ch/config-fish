@@ -9,10 +9,14 @@ function add_to_path
 	end
 end
 
+# System path
 set PATH /bin
 add_to_path /usr/{local/,}bin
+add_to_path /run/current-system/sw/{,s}bin
 add_to_path /usr/bin/{site,vendor,core}_perl
 
+# User path
+add_to_path $HOME/.nix-profile/bin
 add_to_path $HOME/.local/bin
 add_to_path $HOME/.cargo/bin
 add_to_path $HOME/.bin
