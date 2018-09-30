@@ -13,7 +13,7 @@ function __hg
     command hg $argv
   else
     command hg status
-    command hg log | head -n 5
+    command hg log
   end
 end
 
