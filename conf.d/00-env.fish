@@ -12,9 +12,12 @@ end
 # System path
 set PATH /bin
 add_to_path /usr/{local/,}bin
-add_to_path /run/current-system/sw/{,s}bin
 add_to_path /usr/bin/{site,vendor,core}_perl
-
+# Nixos
+add_to_path /etc/profiles/per-user/$USER/bin
+add_to_path /run/current-system/sw/{,s}bin
+add_to_path /nix/var/nix/profiles/default/bin
+add_to_path /run/wrappers/bin
 # User path
 add_to_path $HOME/.nix-profile/bin
 add_to_path $HOME/.local/bin
