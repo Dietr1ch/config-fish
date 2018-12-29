@@ -1,47 +1,47 @@
 
 alias _r="exec fish"
 if which pacaur >/dev/null ^/dev/null
-	alias p="pacaur"
+	abbr p="pacaur"
 else if which pacman >/dev/null ^/dev/null
-	alias p="pacman"
+	abbr p="pacman"
 end
 
 if which exa >/dev/null ^/dev/null
-	alias l="exa -F --group-directories-first"
-	alias ll="exa -lF --git --group-directories-first"
+	abbr l="exa -F --group-directories-first"
+	abbr ll="exa -lF --git --group-directories-first"
 else
-	alias l="ls --group-directories-first"
-	alias ll="ls -l --group-directories-first"
+	abbr l="ls --group-directories-first"
+	abbr ll="ls -l --group-directories-first"
 end
-alias la="l -a"
-alias lla="ll -a"
+abbr la="l -a"
+abbr lla="ll -a"
 
-alias f="fd"
-alias r="ranger"
-alias rs="rsync"
+abbr f="fd"
+abbr r="ranger"
+abbr rs="rsync"
 
-alias e="$EDITOR"
-alias ee="$VISUAL"
-alias em="emacs"
-alias ec="emacsclient"
+abbr e="$EDITOR"
+abbr ee="$VISUAL"
+abbr em="emacs"
+abbr ec="emacsclient"
 
-alias v="vim"
-alias n="nvim"
+abbr v="vim"
+abbr n="nvim"
 
-alias m="ncmpcpp"
+abbr m="ncmpcpp"
 
-alias g="git"
+abbr g="git"
 
-alias o="xdg-open"
+abbr o="xdg-open"
 
-alias λ="ghci"
+abbr λ="ghci"
 
-alias py="python"
-alias ipy="ipython"
+abbr py="python"
+abbr ipy="ipython"
 
 alias clipCopy="xclip -sel clip"
 alias clipPaste="xclip -o"
 alias clipLength="clipPaste | wc"
 
-alias sc="systemctl"
-alias scu="systemctl  --user"
+abbr sc="systemctl"
+abbr scu="systemctl  --user"
