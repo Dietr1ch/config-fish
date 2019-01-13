@@ -14,7 +14,7 @@ fisher Dietr1ch/config-fish
 *** Fish/Fisherman/Config install on Arch/Manjaro
 #+begin_src fish
 sudo pacman -S --needed fish \
-	&& curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs https://git.io/fisher \
-	&& fish -c "fisher Dietr1ch/config-fish" \
+	&& curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish \
+	&& fish -c "fisher add Dietr1ch/config-fish" \
 	&& exec fish
 #+end_src
