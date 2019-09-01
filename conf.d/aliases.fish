@@ -8,7 +8,7 @@ end
 
 if which exa >/dev/null ^/dev/null
 	abbr l "exa -F --group-directories-first"
-	abbr ll "exa -lF --git --group-directories-first"
+	abbr ll "exa -lF --group-directories-first"
 else
 	abbr l "ls --group-directories-first"
 	abbr ll "ls -l --group-directories-first"
